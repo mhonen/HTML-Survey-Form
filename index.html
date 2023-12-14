@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please input info in bottom form.</p>
+    <form id="survey-form">
+      <label id="name-label">Full Name: </label>
+      <br><br>
+      <input id="name" type="text" placeholder="text" required>
+      <br>
+      <br>
+      <label id="email-label">Email:</label>
+      <br><br>
+      <input id="email" type="email" placeholder="text" required>
+      <br><br>
+      <label id="number-label">Age: </label>
+      <br><br>
+      <input id="number" type="number" min="18" max="100" placeholder="number">
+      <br><br>
+      <label>How did you hear about us?</label>
+      <br><br>
+      <select id="dropdown">
+        <option>News Letter</option>
+        <option>Search Engine</option>
+        <option>Dealership</option>
+      </select>
+      <br><br>
+      <label>Are you affiliated with any other organization?</label>
+      <br><br>
+      <span>Yes</span><input type="radio" name="ismember" value="true">
+      <span>No</span><input type="radio" name="ismember" value="false">
+      <br><br>
+      <label>Is you motorcycle new?</label>
+      <br><br>
+      <span>Yes</span><input type="checkbox" value="true">
+      <span>No</span><input type="checkbox" value="false">
+      <br><br>
+      <label>Please add remarks about you make and engine size of you motorcycle.</label>
+      <br><br>
+      <textarea required></textarea>
+      <br><br>
+      <button id="submit" type="submit">Submit</button>
+      </form>
+    </body>
+  </html>
